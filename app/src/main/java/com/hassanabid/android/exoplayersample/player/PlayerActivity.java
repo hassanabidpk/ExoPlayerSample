@@ -281,10 +281,12 @@ DemoPlayer.Id3MetadataListener{
 
         String userAgent = Util.getUserAgent(this,"ExoPlayerSample");
         switch (contentType) {
-            /*
-            case Util.TYPE_DASH;
-            case Util.Type_HLS;
-            */
+            case Util.TYPE_DASH:
+                return new DashRendererBuilder(this, userAgent, contentUri.toString(),
+                        new WidevineTestMediaDrmCallback(contentId,provider));
+            case Util.TYPE_HLS:
+                return new ExtractorRendererBuilder(this, userAgent, contentUri);
+
             case Util.TYPE_OTHER:
                 return new ExtractorRendererBuilder(this, userAgent, contentUri);
 

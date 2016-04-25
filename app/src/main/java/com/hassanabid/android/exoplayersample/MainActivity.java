@@ -35,13 +35,6 @@ public class MainActivity extends AppCompatActivity {
         final List<SampleGroup> sampleGroups = new ArrayList<>();
         SampleGroup group = new SampleGroup("YouTube DASH");
         group.addAll(Samples.YOUTUBE_DASH_MP4);
-        group.addAll(Samples.YOUTUBE_DASH_WEBM);
-        sampleGroups.add(group);
-        group = new SampleGroup("Widevine DASH Policy Tests (GTS)");
-        group.addAll(Samples.WIDEVINE_GTS);
-        sampleGroups.add(group);
-        group = new SampleGroup("Widevine HDCP Capabilities Tests");
-        group.addAll(Samples.WIDEVINE_HDCP);
         sampleGroups.add(group);
         group = new SampleGroup("Widevine DASH: MP4,H264");
         group.addAll(Samples.WIDEVINE_H264_MP4_CLEAR);
@@ -49,14 +42,10 @@ public class MainActivity extends AppCompatActivity {
         sampleGroups.add(group);
         group = new SampleGroup("Widevine DASH: WebM,VP9");
         group.addAll(Samples.WIDEVINE_VP9_WEBM_CLEAR);
-        group.addAll(Samples.WIDEVINE_VP9_WEBM_SECURE);
         sampleGroups.add(group);
         group = new SampleGroup("Widevine DASH: MP4,H265");
         group.addAll(Samples.WIDEVINE_H265_MP4_CLEAR);
         group.addAll(Samples.WIDEVINE_H265_MP4_SECURE);
-        sampleGroups.add(group);
-        group = new SampleGroup("SmoothStreaming");
-        group.addAll(Samples.SMOOTHSTREAMING);
         sampleGroups.add(group);
         group = new SampleGroup("HLS");
         group.addAll(Samples.HLS);
