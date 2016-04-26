@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         final List<SampleGroup> sampleGroups = new ArrayList<>();
         SampleGroup group = new SampleGroup("YouTube DASH");
-        group.addAll(Samples.YOUTUBE_DASH_MP4);
+        group.addAll(Samples.DASH_MP4);
         sampleGroups.add(group);
         group = new SampleGroup("Widevine DASH: MP4,H264");
         group.addAll(Samples.WIDEVINE_H264_MP4_CLEAR);

@@ -285,7 +285,7 @@ DemoPlayer.Id3MetadataListener{
                 return new DashRendererBuilder(this, userAgent, contentUri.toString(),
                         new WidevineTestMediaDrmCallback(contentId,provider));
             case Util.TYPE_HLS:
-                return new ExtractorRendererBuilder(this, userAgent, contentUri);
+                return new HlsRendererBuilder(this, userAgent, contentUri.toString());
 
             case Util.TYPE_OTHER:
                 return new ExtractorRendererBuilder(this, userAgent, contentUri);
